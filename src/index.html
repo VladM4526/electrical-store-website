@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic store</title>
+  <link rel="icon" href="./images/eletrical-store-logo-edited-cut.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Sofia+Sans+Extra+Condensed:wght@300;400;500;600;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+  <header class="el-store">
+    <div class="el-store-header-mobile-menu">
+      <div class="el-store-header-mobile-menu-container">
+        <a href="#">
+          <svg class="el-store-logo-mobile">
+            <use href="./images/logo-website-svg.svg#icon-logo-website-svg-01"></use>
+          </svg>
+        </a>
+        <button class="el-store-header-mobile-menu-button" type="button">
+          <svg class="el-store-header-mobile-menu-button-icon">
+            <use href="./images/set-icons-mobile-menu.svg#icon-mobile-menu-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="el-store-container hidden">
+      <div class="el-store-mobile-menu-modal-container">
+        <a class="el-store-logo" href="#">
+          <svg class="el-store-logo">
+            <use href="./images/logo-website-svg.svg#icon-logo-website-svg-01"></use>
+          </svg>
+        </a>
+        <button class="el-store-mobile-menu-modal-close-button" type="button">
+          <svg class="el-store-mobile-menu-modal-close-button-icon">
+            <use href="./images/set-icons-modal.svg#icon-close-button"></use>
+          </svg>
+        </button>
+        <nav class="el-store-menu">
+          <ul class="el-store-menu-list">
+            <li class="el-store-menu-list-items"><a class="el-store-menu-list-link" href="#">Home</a></li>
+            <li class="el-store-menu-list-items"><a class="el-store-menu-list-link" href="#">Products</a></li>
+            <li class="el-store-menu-list-items"><a class="el-store-menu-list-link" href="#">Articles</a></li>
+            <li class="el-store-menu-list-items"><a class="el-store-menu-list-link" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button class="el-store-account-mobile-menu-container" id="el-store-account-mobile-menu-container">
+          <svg class="el-store-account" id="el-store-account">
+            <use href="./images/set-icons-main-page.svg#icon-account-icon-header"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="el-store-order-container">
+      <div class="el-store-order">
+        <p class="el-store-order-text">iPhones</p>
+      </div>
+      <button class="el-store-order-button" type="button">Learn more</button>
+    </div>
+  </header>
+  <main>
+    <section class="el-store-our-products">
+      <div class="el-store-our-products-container">
+        <h1 class="el-store-our-products-title">Our products</h1>
+        <ul class="el-store-our-products-list">
+          <li class="el-store-our-products-item">
+            <img class="el-store-our-products-item-images" src="./images/iPhones-edited.jpg" alt="iphones">
+            <div class="el-store-our-products-item-container iphones">
+              <h2 class="el-store-our-products-item-title">iPhones</h2>
+              <p class="el-store-our-products-item-text">Lorem ipsum dolor sit amet consectetur. Feugiat non tempor
+                turpis nibh
+                eu. Rhoncus bibendum risus aliquet laoreet id sit semper dolor egestas.</p>
+              <button id="myModal" class="el-store-our-products-item-button" type="button">Buy</button>
+            </div>
+          </li>
+          <li class="el-store-our-products-item">
+            <img class="el-store-our-products-item-images" src="./images/TV-edited.jpg" alt="TV" width="574">
+            <div class="el-store-our-products-item-container tv">
+              <h2 class="el-store-our-products-item-title">TV</h2>
+              <p class="el-store-our-products-item-text">Lorem ipsum dolor sit amet consectetur. Feugiat non tempor
+                turpis nibh eu. Rhoncus bibendum risus aliquet laoreet id sit semper dolor egestas.</p>
+              <button class="el-store-our-products-item-button" type="button">Buy</button>
+            </div>
+            <div class="el-store-our-products-modal">
+              <div class="el-store-our-products-overlay">
+                <div class="el-store-our-products-overlay-container">
+                  <h2 class="el-store-our-products-modal-title">Information about delivery</h2>
+                  <button class="el-store-our-products-modal-form-close-button" type="button">
+                    <svg class="el-store-our-products-modal-form-close-button-icon">
+                      <use href="./images/set-icons-modal.svg#icon-close-button"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="el-store-our-products-item">
+            <img class="el-store-our-products-item-images" src="./images/fridges-edited.jpg" alt="Fridges" width="570">
+            <div class="el-store-our-products-item-container fridges">
+              <h2 class="el-store-our-products-item-title">Fridges</h2>
+              <p class="el-store-our-products-item-text">Lorem ipsum dolor sit amet consectetur. Feugiat non
+                tempor turpis nibh eu. Rhoncus
+                bibendum risus aliquet laoreet id sit semper dolor egestas.</p>
+              <button class="el-store-our-products-item-button" type="button">Buy</button>
+            </div>
+            <div class="el-store-our-products-modal">
+              <div class="el-store-our-products-overlay">
+                <div class="el-store-our-products-overlay-container">
+                  <h2 class="el-store-our-products-modal-title">Information about delivery</h2>
+                  <button class="el-store-our-products-modal-form-close-button" type="button">
+                    <svg class="el-store-our-products-modal-form-close-button-icon">
+                      <use href="./images/set-icons-modal.svg#icon-close-button"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="el-store-articles">
+      <div class="el-store-articles-container">
+        <h1 class="el-store-articles-title">Articles</h1>
+        <ul class="el-store-article-cards">
+          <li class="el-store-articles-card">
+            <img class="el-store-articles-image" src="./images/articles-edited.jpg" alt="articles" width="449">
+            <h2 class="el-store-articles-title-article">How select computer for work?</h2>
+            <p class="el-store-articles-text">Lorem ipsum dolor sit amet consectetur.</p>
+            <button class="el-store-article-button" type="button">Read</button>
+          </li>
+          <li class="el-store-articles-card">
+            <img class="el-store-articles-image" src="./images/articles-edited.jpg" alt="articles" width="449">
+            <h2 class="el-store-articles-title-article">How select computer for work?</h2>
+            <p class="el-store-articles-text">Lorem ipsum dolor sit amet consectetur.</p>
+            <button class="el-store-article-button" type="button">Read</button>
+          </li>
+          <li class="el-store-articles-card">
+            <img class="el-store-articles-image" src="./images/articles-edited.jpg" alt="articles" width="449">
+            <h2 class="el-store-articles-title-article">How select computer for work?</h2>
+            <p class="el-store-articles-text">Lorem ipsum dolor sit amet consectetur.</p>
+            <button class="el-store-article-button" type="button">Read</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="el-store-questions">
+      <div class="el-store-questions-container">
+        <h1 class="el-store-questions-title">Do you have question?</h1>
+        <form class="el-store-questions-form" method="POST" action="javascript:void(0);" autocomplete="off">
+          <input class="el-store-questions-form-button" type="button" name="sumbit"
+            value="Leave an application on website">
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="el-store-footer">
+    <div class="el-store-footer-container">
+      <ul class="el-store-footer-cards-list">
+        <li class="el-store-footer-cards-list-item">
+          <a href="#">
+            <svg class="el-store-footer-image">
+              <use href="./images/footer-logo-icon.svg#icon-logo-footer-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="el-store-footer-cards-list-item">
+          <h2 class="el-store-footer-title">Subscription</h2>
+          <form class="el-store-footer-form" autocomplete="off">
+            <input class="el-store-footer-input" type="email" name="email" placeholder="Email">
+            <input class="el-store-footer-button" type="submit" name="sumbit" value="Confirm">
+          </form>
+        </li>
+        <li class="el-store-footer-cards-list-item">
+          <h2 class="el-store-footer-social-media-title">Social media</h2>
+          <svg class="el-store-footer-social-media-icons">
+            <use href="./images/social-media-icons.svg#icon-ri_twitter-fill-icon"></use>
+          </svg>
+          <svg class="el-store-footer-social-media-icons">
+            <use href="./images/social-media-icons.svg#icon-ic_baseline-facebook-icon"></use>
+          </svg>
+          <svg class="el-store-footer-social-media-icons">
+            <use href="./images/social-media-icons.svg#icon-bi_instagram-icon"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./scripts/mobile-menu.js"></script>
+  <script src="./scripts/forms.js" type="module"></script>
+</body>
+
+</html>

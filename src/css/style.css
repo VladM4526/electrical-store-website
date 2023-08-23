@@ -1,0 +1,801 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text-our-product: #000000;
+    --buttons: #18227C;
+    --color-buttons: #ffffff;
+    --text-menu: #ffffff;
+    --footer: #0F1657;
+    --footer-input: #000000;
+    --color-account: #ffffff;
+    --modal-overlay: rgba(217, 217, 217, 0.8);
+    --modal-overlay-order: rgba(217, 217, 217, 0.5);
+    --modal-background: #ffffff;
+    --color-title-modal: #000000;
+    --close-button-background: #D9D9D9;
+    --checkbox-border: #000000;
+    --modal-placeholder-and-text: #9B9B9B;
+    --any-title: #000000;
+    --color-footer-input: #ffffff;
+}
+
+/* Header */
+
+.el-store-header-mobile-menu {
+    display: none;
+}
+
+.el-store-mobile-menu-modal-close-button {
+    display: none;
+}
+
+.el-store-container {
+    width: 1872px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.el-store {
+    max-width: 100%;
+    background-image: url("../images/background-slader-edited.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.el-store-logo {
+    width: 121px;
+    height: 138px;
+}
+
+.el-store-account {
+    width: 50px;
+    height: 50px;
+    fill: var(--color-account);
+    margin-right: 58px;
+}
+
+.el-store-menu-list-link {
+    color: var(--text-menu);
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.1;
+}
+
+.el-store-menu-list {
+    display: flex;
+}
+
+.el-store-menu-list .el-store-menu-list-link {
+    padding-left: 37px;
+    padding: 5px 21px;
+    transition: 250ms cubic-bezier(.94,-0.01,.15,.99);
+}
+
+.el-store-menu-list .el-store-menu-list-link:hover {
+    cursor: pointer;
+    background: var(--text-menu);
+    color: var(--buttons);
+}
+
+.el-store-menu-list .el-store-menu-list-items:nth-child(1) {
+    padding-left: 0px;
+}
+
+/* account */ 
+
+.el-store-account-mobile-menu-container {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+/* Our products */
+
+.el-store-our-products {
+    margin-top: 111px;
+}
+
+.el-store-our-products-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.el-store-our-products-container {
+    width: 1313px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.el-store-our-products-item-images {
+    width: 567px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.el-store-our-products-item-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+    color: var(--color-text-our-product);
+    margin-bottom: 124px;
+}
+
+.el-store-our-products-item-text {
+    width: 552px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 105px;
+}
+
+.el-store-our-products-item-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 9px 148px;
+    background: var(--buttons);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+    color: var(--color-buttons);
+}
+
+.el-store-our-products-item:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.el-store-our-products-item-container {
+    margin-right: 139px;
+}
+
+.el-store-our-products-item-button:hover {
+    background: var(--footer);
+    cursor: pointer;
+}
+
+/* Our products Modal */
+
+.el-store-our-products-modal {
+    width: 100%;
+    height: 100%;
+    background: var(--modal-overlay-order);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+
+.el-store-our-products-overlay {
+    width: 1298px;
+    background: var(--modal-background);
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.el-store-our-products-modal-item-form-container {
+    display: flex;
+}
+
+/* Our products Modal form */
+
+.el-store-our-products-modal-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--color-title-modal);
+}
+
+.el-store-our-products-overlay-container {
+    display: flex;
+    padding: 28px 32px;
+}
+
+.el-store-our-products-modal-form-close-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background: var(--close-button-background);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.el-store-our-products-modal-form-close-button-icon {
+    width: 54px;
+    height: 54px;
+}
+
+/* Our products item */
+
+.el-store-our-products-modal-container {
+    width: 1236px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.el-store-our-products-modal-form-comtainer {
+    width: 541px;
+    margin-left: 49px;
+}
+
+.el-store-our-products-item-img {
+    width: 646px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-bottom: 36px;
+}
+
+/* Our products form date */
+
+/* inputs */
+
+.el-store-our-products-modal-form-input-list {
+    width: 541px;
+}
+
+.el-store-our-products-modal-form-input-list-item:nth-child(2) {
+    margin-top: 21px;
+}
+
+.el-store-our-products-modal-form-input-list-item:nth-child(3) {
+    margin-top: 21px;
+}
+
+.el-store-our-products-modal-form-input-container {
+    width: 600px;
+    display: flex;
+}
+
+.el-store-our-products-modal-form-input {
+    position: relative;
+}
+
+.el-store-our-products-modal-form-input-item {
+    border: none;
+    outline: none;
+    width: 541px;
+    padding: 21px 90px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: var(--close-button-background);
+    border-radius: 10px;
+    font-size: 32px;
+    color: var(--modal-placeholder-and-text);
+}
+
+.el-store-our-products-modal-form-input-item::placeholder {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.9;
+    color: var(--modal-placeholder-and-text);
+}
+
+.el-store-our-products-modal-form-input-item-icon {
+    position: absolute;
+    top: 25px;
+    left: 31px;
+    display: block;
+}
+
+.el-store-our-products-modal-form-input-icon {
+    width: 35px;
+    height: 35px;
+}
+
+/* custom checkbox */
+
+.el-store-our-products-modal-form-data-label-checkbox {
+    width: 387px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.el-store-our-products-modal-form-input-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--checkbox-border);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.el-store-our-products-modal-form-input-checkbox-icon {
+    display: block;
+    width: 35px;
+    height: 35px;
+    fill: var(--color-buttons);
+}
+
+.el-store-our-products-modal-form-input-checkbox:checked + .el-store-our-products-modal-form-input-checkbox-icon {
+    fill: var(--color-buttons);
+    background: var(--buttons);
+    border-radius: 10px;
+}
+
+/* custom checkbox text */
+
+.el-store-our-products-modal-form-checkbox-text-rules {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--modal-placeholder-and-text);
+    margin-left: 27px;
+}
+
+.el-store-our-products-modal-form-checkbox-text-rules-link {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--buttons);
+}
+
+/* input button */
+
+.el-store-our-products-modal-form-input-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 541px;
+    padding: 12px 244px;
+    background: var(--buttons);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+    color: var(--color-buttons);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.el-store-our-products-modal-form-input-button:hover {
+    background: var(--footer);
+}
+
+/* Articles */
+
+.el-store-articles {
+    margin-top: 41px;
+}
+
+.el-store-articles-container {
+    width: 1393px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.el-store-article-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.el-store-articles-card {
+    width: 449px;
+    text-align: center;
+    margin-left: 23px;
+    margin-top: 40px;
+}
+
+.el-store-articles-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.el-store-articles-title-article {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.1;
+    margin-top: 20px;
+}
+
+.el-store-articles-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 25px;
+}
+
+.el-store-article-button {
+    border: none;
+    outline: none;
+    color: var(--text-menu);
+    background: var(--buttons);
+    padding: 9px 201px;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 23px;
+}
+
+.el-store-articles-image {
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.el-store-articles-card:first-child {
+    margin-left: 0px;
+}
+
+.el-store-article-button:hover {
+    background: var(--footer);
+    cursor: pointer;
+}
+
+/* Ask question */
+
+.el-store-questions-container {
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 37px;
+    margin-bottom: 102px;
+}
+
+.el-store-questions-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.el-store-questions-form-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background: var(--buttons);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+    color: var(--color-buttons);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.el-store-questions-form-button:hover {
+    background: var(--footer);
+}
+
+/* Ask question Modal */
+
+.el-store-questions-modal-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: var(--modal-overlay);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.el-store-questions-modal-container {
+    width: 684px;
+    background: var(--modal-background);
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.el-questions-modal-form-title {
+    color: var(--any-title);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.el-questions-modal-form-close-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background: var(--modal-overlay);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.el-questions-modal-form-close-button-icon {
+    width: 54px;
+    height: 54px;
+}
+
+/* account header modal form */
+
+.el-questions-modal-form-title-button-container {
+    display: flex;
+    padding: 28px 42px;
+}
+
+.el-store-questions-modal-form-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--color-title-modal);
+}
+
+.el-store-questions-modal-form-close-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background: var(--close-button-background);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.el-store-questions-modal-form-close-button-icon {
+    width: 54px;
+    height: 54px;
+}
+
+/* inputs */
+
+.el-questions-modal-form-input-list {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.el-questions-modal-form-input-list-item:nth-child(2) {
+    margin-top: 21px;
+}
+
+.el-questions-modal-form-input-list-item:nth-child(3) {
+    margin-top: 21px;
+}
+
+.el-questions-modal-form-input-container {
+    width: 600px;
+    display: flex;
+}
+
+.el-questions-modal-form-input {
+    position: relative;
+}
+
+.el-questions-modal-form-input-item {
+    border: none;
+    outline: none;
+    width: 600px;
+    padding: 29px 90px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: var(--close-button-background);
+    border-radius: 10px;
+    font-size: 32px;
+    color: var(--modal-placeholder-and-text);
+}
+
+.el-questions-modal-form-input-item::placeholder {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.9;
+    color: var(--modal-placeholder-and-text);
+}
+
+.el-questions-modal-form-input-item-icon {
+    position: absolute;
+    top: 30px;
+    left: 31px;
+    display: block;
+}
+
+.el-questions-modal-form-input-icon {
+    width: 35px;
+    height: 35px;
+}
+
+/* custom checkbox */
+
+.el-questions-modal-form-data-label-checkbox {
+    width: 387px;
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.el-questions-modal-form-input-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--checkbox-border);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.el-questions-modal-form-input-checkbox-icon {
+    display: block;
+    width: 35px;
+    height: 35px;
+    fill: var(--color-buttons);
+}
+
+.el-questions-modal-form-input-checkbox:checked + .el-questions-modal-form-input-checkbox-icon {
+    fill: var(--color-buttons);
+    background: var(--buttons);
+    border-radius: 10px;
+}
+
+/* custom checkbox text */
+
+.el-questions-modal-form-checkbox-text-rules {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--modal-placeholder-and-text);
+    margin-left: 27px;
+}
+
+.el-questions-modal-form-checkbox-text-rules-link {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--buttons);
+}
+
+/* input button */
+
+.el-questions-modal-form-input-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 600px;
+    padding: 12px 282px;
+    background: var(--buttons);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+    color: var(--color-buttons);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    cursor: pointer;
+}
+
+.el-questions-modal-form-input-button:hover {
+    background: var(--footer);
+}
+
+/* footer */
+
+.el-store-footer {
+    width: 100%;
+    background: var(--footer);
+}
+
+.el-store-footer-container {
+    width: 1890px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.el-store-footer-cards-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 0px 137px;
+}
+
+.el-store-footer-image {
+    width: 94px;
+    height: 109px;
+}
+
+.el-store-footer-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+    color: var(--text-menu);
+    margin-bottom: 14px;
+}
+
+.el-store-footer-input {
+    width: 632px;
+    background: var(--buttons);
+    color: var(--color-footer-input);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 32px;
+    width: 461px;
+    padding: 15px 19px;
+}
+
+.el-store-footer-input::placeholder {
+    color: var(--color-footer-input);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+}
+
+.el-store-footer-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background: var(--buttons);
+    width: 131px;
+    padding: 15px 28px;
+    color: var(--color-buttons);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(.94,-0.01,.15,.99);
+}
+
+.el-store-footer-button:hover {
+    background: var(--footer);
+}
+
+.el-store-footer-social-media-title {
+    text-align: right;
+    color: var(--text-menu);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+}
+
+.el-store-footer-social-media-icons {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.el-store-footer-social-media-icons:last-child {
+    margin-right: 0px;
+}
