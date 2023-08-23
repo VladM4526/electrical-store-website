@@ -1,13 +1,12 @@
 {
-  "name": "electrical-store-(website)-collection-(parcel)",
+  "name": "electrical-store-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
-    "deploy": "rm -rf dist/ && npm build && gh-pages -d dist",
-    "start": "parcel src/index.html"
+    "deploy": "rm -rf dist/ && npm run build && gh-pages -d dist",
+    "start": "parcel index.html",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "homepage": "https://VladM4526.github.io/electrical-store-website.git",
   "keywords": [],
