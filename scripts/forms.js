@@ -1,4 +1,4 @@
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import Notiflix from 'notiflix';
 
 const elStoreFormSubscription = document.querySelector(".el-store-footer-form");
 const elStoreFormSubscriptionInput = document.querySelector(".el-store-footer-input");
@@ -13,9 +13,9 @@ function subscribeForm(e) {
     const fulledInput = !elStoreFormSubscription.value
 
     if (emptyInput === "") {
-        Notify.warning(messageForUserFirst);
+        Notiflix.Notify.warning(messageForUserFirst);
     } else if (fulledInput) {
-        Notify.success(messageForUserSecond);
+        Notiflix.Notify.success(messageForUserSecond);
     }
 
     elStoreFormSubscription.reset();
